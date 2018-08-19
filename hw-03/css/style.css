@@ -1,0 +1,129 @@
+
+@font-face{
+
+    font-family: 'Playfair Display';
+    
+    src: url('../fonts/playfair/PlayfairDisplay-Regular.otf');
+    
+    font-weight: normal;
+    
+    font-style: normal;
+    
+    }
+@font-face{
+
+    font-family: 'Ubuntu';
+    
+    src: url('../fonts/ubuntu/ubuntu-L.ttf');
+    
+    font-weight: normal;
+    
+    font-style: normal;
+    
+    }
+
+* {
+    margin: 0;
+    padding: o;
+    font-family: "Playfair Display";
+    font-weight: 400;
+    color: #626262;
+    line-height: 24px;
+}
+
+
+.main-content {
+    width: 960px;
+    margin: auto;
+}
+
+ul.main-menu {
+    width: 960px;
+    margin: 60px auto 20px;
+    padding: 10px 0 10px 185px ;
+    box-sizing: border-box;
+}
+
+.main-menu-item {
+    box-sizing: border-box;
+    display: inline-block;
+    margin-right: 95px;
+    text-align: center;   
+    list-style: none;
+}
+
+/* * {
+    outline: 1px solid red;
+} */
+.main-menu-link {
+    display: block;
+    width: 88px;
+    text-align: center;   
+    text-decoration: none; 
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.blue {
+    color: #03a9f4;
+}
+
+ul.article-list {
+    padding-left: 0;
+
+}
+.article-list-item {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 420px;
+    margin: 65px 29px;
+    list-style: none;
+}
+
+li.article-list-item h2 {
+    color: #b4ad9e;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 28px 0 25px 0;
+}
+
+li.article-list-item h3 {
+    font-size: 30px;
+    margin: 26px 0 37px 0;
+}
+
+.article-list-item p {
+    font-size: 14px;
+    height: 66px;
+    overflow: hidden;
+}
+
+.article-list-item {
+    widht: 480px;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.article-button {
+    background-color: #fff;
+    text-align: center;
+}
+
+.my {
+    width: 167px;
+    height: 63px;
+    border: 1px solid #626262;
+    font-family: "Playfair Display";
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 69px;;
+}
+/* 
+.article-img {
+    filter: 
+          hue-rotate(0deg)
+          opacity(50%)
+} */

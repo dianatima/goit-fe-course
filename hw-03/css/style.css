@@ -87,12 +87,12 @@ li.article-list-item h2 {
     font-size: 14px;
     font-weight: 300;
     text-transform: uppercase;
-    margin: 28px 0 25px 0;
+    margin: 20px 0 18px 0;
 }
 
 li.article-list-item h3 {
     font-size: 30px;
-    margin: 26px 0 37px 0;
+    margin: 23px 0 33px 0;
 }
 
 .article-list-item p {
@@ -113,6 +113,17 @@ li.article-list-item h3 {
 }
 
 .my {
+    width: 167px;
     height: 63px;
-    border-color: #626262;
+    border: 1px solid #626262;
+    font-family: "Playfair Display";
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 69px;
 }
+/* 
+.article-img {
+    filter: 
+          hue-rotate(0deg)
+          opacity(50%)
+} */

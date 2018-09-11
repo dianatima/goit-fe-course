@@ -24,7 +24,7 @@
 
 * {
     margin: 0;
-    padding: o;
+    padding: 0;
     font-family: "Playfair Display";
     font-weight: 400;
     color: #626262;
@@ -51,6 +51,10 @@
     list-style: none;
 }
 
+.main-menu-item:hover a{
+    color: #03a9f4;
+}
+
 .main-menu-item:not(:last-child) {
     margin-right: 100px;
 }
@@ -64,12 +68,7 @@
     text-transform: uppercase;
 }
 
-.blue {
-    color: #03a9f4;
-}
-
-
-.main-content {
+main {
     padding-top: 30px;  
 }
 
@@ -89,13 +88,19 @@
     margin-bottom: 135px;
 }
 
+
+.article-img {
+    width: 420px;
+    height: 280px;
+}
+
 .article-list-item h2 {
     color: #b4ad9e;
     font-family: Ubuntu;
     font-size: 14px;
     font-weight: 300;
     text-transform: uppercase;
-    margin: 20px 0 18px 0;
+    margin-top: 20px;
 }
 
 .article-list-item h3 {
@@ -118,12 +123,14 @@
 .article-button {
     background-color: #fff;
     text-align: center;
-    line-height: 170px;
+    /* line-height: 170px; */
+    padding: 55px 0;
 }
 
 .my {
     width: 167px;
-    height: 63px;
+    /* height: 63px; */
+    padding: 17px 0;
     border: 1px solid #626262;
     font-family: "Playfair Display";
     font-size: 20px;

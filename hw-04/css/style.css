@@ -252,3 +252,6 @@
     text-align: center;
     cursor: pointer;
 }
+
+img {
+    vertical-align: top;

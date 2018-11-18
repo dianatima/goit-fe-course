@@ -2,25 +2,25 @@
 
 let userInput;
 let total = 0;
-let inRange = false;
 const arr = [];
+
+const notNumber = "Было введено не число, попробуйте еще раз";
 
 do {
   userInput = prompt("Введите число!");
   let numb = Number(userInput);
-  inRange = Number.isNaN(numb);
 
-  if (!inRange) {
+  if (!Number.isNaN(numb) && userInput != null) {
     arr.push(numb);
-  } else {
-    alert("Было введено не число, попробуйте еще раз");
+  } else if (userInput != null) {
+    alert(notNumber);
   }
 } while (userInput != null);
 
 console.log(arr);
 
 for (const value of arr) {
-  total = total + value;
+  total += value;
 }
 console.log(total);
 

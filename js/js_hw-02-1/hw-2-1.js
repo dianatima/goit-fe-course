@@ -17,12 +17,9 @@ do {
   }
 } while (userInput != null);
 
-console.log(arr);
-
 for (const value of arr) {
   total += value;
 }
-console.log(total);
 
 if (arr.length > 0) {
   alert(`Общая сумма чисел равна ${total}`);

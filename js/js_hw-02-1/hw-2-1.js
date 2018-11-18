@@ -2,7 +2,7 @@
 
 let userInput;
 let total = 0;
-const arr = [];
+const userNumbers = [];
 
 const notNumber = "Было введено не число, попробуйте еще раз";
 
@@ -11,16 +11,16 @@ do {
   let numb = Number(userInput);
 
   if (!Number.isNaN(numb) && userInput != null) {
-    arr.push(numb);
+    userNumbers.push(numb);
   } else if (userInput != null) {
     alert(notNumber);
   }
 } while (userInput != null);
 
-for (const value of arr) {
+for (const value of userNumbers) {
   total += value;
 }
 
-if (arr.length > 0) {
+if (userNumbers.length > 0) {
   alert(`Общая сумма чисел равна ${total}`);
 }

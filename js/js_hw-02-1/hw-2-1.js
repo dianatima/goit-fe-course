@@ -10,17 +10,16 @@ do {
   userInput = prompt("Введите число!");
   let numb = Number(userInput);
 
-  if (!Number.isNaN(numb) && userInput != null) {
-    userNumbers.push(numb);
+  if (!Number.isNaN(+userInput) && userInput !== null) {
+    userNumbers.push(+userInput);
   } else if (userInput != null) {
     alert(notNumber);
   }
 } while (userInput != null);
 
-for (const value of userNumbers) {
-  total += value;
-}
-
 if (userNumbers.length > 0) {
+  for (const value of userNumbers) {
+    total += value;
+  }
   alert(`Общая сумма чисел равна ${total}`);
 }

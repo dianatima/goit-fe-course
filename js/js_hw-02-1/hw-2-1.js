@@ -14,7 +14,7 @@ do {
   } else if (userInput != null) {
     alert(notNumber);
   }
-} while (userInput != null);
+} while (userInput !== null);
 
 if (userNumbers.length > 0) {
   for (const value of userNumbers) {

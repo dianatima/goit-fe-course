@@ -8,7 +8,6 @@ const notNumber = "Было введено не число, попробуйте
 
 do {
   userInput = prompt("Введите число!");
-  let numb = Number(userInput);
 
   if (!Number.isNaN(+userInput) && userInput !== null) {
     userNumbers.push(+userInput);

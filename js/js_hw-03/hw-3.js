@@ -11,36 +11,28 @@ const used = "Такой логин уже используется!";
 const userLogin = prompt("Введите логин!");
 
 const isLoginValid = function(login) {
-  const isValid = login.length >= min && login.length <= max && login != null;
-  return isValid;
+  return login.length >= min && login.length <= max;
 };
 
 const isLoginUnique = function(allLogins, login) {
-  let hasLogin = false;
-  for (const login of allLogins) {
-    if (login === userLogin) {
-      hasLogin = true;
-      break;
-    }
-  }
-  return hasLogin;
+  return allLogins.includes(login);
 };
 
 const addLogin = function(logins, login) {
-  if (userLogin === null) {
+  if (login === null) {
     return;
   }
   if (isLoginValid(login)) {
     if (!isLoginUnique(logins, login)) {
       logins.push(login);
-      alert(success);
-      return logins;
+      return success;
     } else {
-      return alert(used);
+      return used;
     }
   } else {
-    return alert(error);
+    return error;
   }
 };
 
 addLogin(logins, userLogin);
+

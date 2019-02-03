@@ -8,7 +8,7 @@ const getUsersByEyeColor = (arr, color) =>
 console.log(getUsersByEyeColor(users, "blue"));
 
 const getUsersByGender = (arr, gender) =>
-  arr.filter(user => user.gender === gender);
+  arr.filter(user => user.gender === gender).map(user => user.name);
 console.log(getUsersByGender(users, "male"));
 
 const getInactiveUsers = arr =>

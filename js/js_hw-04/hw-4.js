@@ -12,11 +12,11 @@ function Cashier(name, productDatabase = [], customerMoney = 0) {
   this.name = name;
   this.productDatabase = productDatabase;
   this.customerMoney = customerMoney;
-  let totalPrice = 0;
   this.getCustomerMoney = function(value) {
     this.customerMoney = value;
   };
   this.countTotalPrice = function(order) {
+    let totalPrice = 0;
     for (let item in order) {
       totalPrice += this.productDatabase[item] * order[item];
     }

@@ -12,18 +12,18 @@ function Cashier(name, productDatabase = [], customerMoney = 0) {
   this.name = name;
   this.productDatabase = productDatabase;
   this.customerMoney = customerMoney;
-  this.totalPrice = 0;
+  let totalPrice = 0;
   this.getCustomerMoney = function(value) {
     this.customerMoney = value;
   };
   this.countTotalPrice = function(order) {
     for (let item in order) {
-      this.totalPrice += this.productDatabase[item] * order[item];
+      totalPrice += this.productDatabase[item] * order[item];
     }
-    return this.totalPrice;
+    return totalPrice;
   };
   this.countChange = function() {
-    const change = this.customerMoney - this.totalPrice;
+    const change = this.customerMoney - totalPrice;
     return change >= 0 ? change : null;
   };
   this.onSuccess = function() {
